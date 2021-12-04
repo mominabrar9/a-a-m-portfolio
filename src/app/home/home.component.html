@@ -1,5 +1,10 @@
-<div class="header display-flex vertical-center horizontal-center">
+<div class="header display-flex vertical-center h-center">
     <app-header class="header-width"></app-header>
 </div>
 
-<div class="body"></div>
+<div class="body display-flex h-end">
+    <mat-card *ngFor="let card of cards; index as i" style="background-color: blanchedalmond" (click)="cardOnTop=i;"
+        [style.margin-right]="'-18rem'" [style.margin-top]="cardMarginTop(i)" class="card-ratio"
+        [style.z-index]="(cardOnTop==i)? 1 : 0">
+        {{i}}</mat-card>
+</div>

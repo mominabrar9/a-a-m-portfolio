@@ -4,8 +4,16 @@
     height: 100vh;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 .display-flex {
     display: flex;
@@ -15,6 +23,18 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     align-items: center;
 }
 
-.horizontal-center {
+.h-center {
     justify-content: center;
+}
+
+.h-space-between {
+    justify-content: space-between;
+}
+
+.h-space-around {
+    justify-content: space-around;
+}
+
+.h-end {
+    justify-content: flex-end;
 }
